@@ -1,0 +1,19 @@
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-truncate(@rows: 1) {
+  & when (@rows = 1) {
+    .text-overflow();
+  }
+  & when not (@rows = 1) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @rows;
+  }
+}

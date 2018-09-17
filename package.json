@@ -1,0 +1,26 @@
+{
+  "name": "less-common-mixins",
+  "version": "1.0.2",
+  "description": "常用的less公用mixins",
+  "main": "index.less",
+  "scripts": {
+    "test": "lessc test.less test.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandozhaxi/less-common-mixin.git"
+  },
+  "keywords": [
+    "less",
+    "mixins"
+  ],
+  "author": "王炼 <fernandozhaxi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandozhaxi/less-common-mixin/issues"
+  },
+  "homepage": "https://github.com/fernandozhaxi/less-common-mixin#readme",
+  "devDependencies": {
+    "less": "^3.0.0-alpha.3"
+  }
+}

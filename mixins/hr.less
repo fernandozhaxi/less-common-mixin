@@ -1,0 +1,10 @@
+.hr(@color; @size: 1px; @style: solid; @direction: horizontal) {
+  & when (@direction = horizontal) {
+    width: 100%;
+    border-top: @size @style @color;
+  }
+  & when (@direction = vertical) {
+    height: 100%;
+    border-left: @size @style @color;
+  }
+}

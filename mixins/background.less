@@ -1,0 +1,29 @@
+.background-gradient(@begin; @end; @angle: 180deg) {
+  @color: average(@begin, @end);
+
+  background-color: @color;
+  background-image: linear-gradient(@angle, @begin, @end);
+}
+
+.background-gradient-x(@begin; @end) {
+  .background-gradient(@begin, @end, 90deg);
+}
+
+.background-gradient-y(@begin; @end) {
+  .background-gradient(@begin, @end);
+}
+
+.background-size(@image; @type) {
+  background-image: @image;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: @type;
+}
+
+.background-cover(@image) {
+  .background-size(@image, cover);
+}
+
+.background-contain(@image) {
+  .background-size(@image, contain);
+}

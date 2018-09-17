@@ -1,0 +1,27 @@
+.caret-up(@size: 8px; @color: #666) {
+  border-top: 0;
+  border-right: @size solid transparent;
+  border-bottom: @size solid @color;
+  border-left: @size solid transparent;
+}
+
+.caret-right(@size: 8px; @color: #666) {
+  border-top: @size solid transparent;
+  border-right: 0;
+  border-bottom: @size solid transparent;
+  border-left: @size solid @color;
+}
+
+.caret-down(@size: 8px; @color: #666) {
+  border-top: @size solid @color;
+  border-right: @size solid transparent;
+  border-bottom: 0;
+  border-left: @size solid transparent;
+}
+
+.caret-left(@size: 8px; @color: #666) {
+  border-top: @size solid transparent;
+  border-right: @size solid @color;
+  border-bottom: @size solid transparent;
+  border-left: 0;
+}
